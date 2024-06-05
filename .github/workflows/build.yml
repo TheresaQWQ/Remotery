@@ -54,7 +54,6 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
         with:
           arch: ${{ matrix.arch }}
-          toolset: ${{ matrix.toolset }}
       - name: Build
         run: .github/scripts/compile.bat ${{ matrix.platform }} ${{ matrix.arch }} ${{ matrix.buildmode }}
       - name: Run
