@@ -47,7 +47,7 @@ jobs:
         platform: ['windows']
         arch: ['x86', 'x64']
         buildmode: ['debug', 'release']
-        toolset: ['14.3','14.2','14.1']
+        toolset: ['14.3','14.2']
 
     steps:
       - uses: actions/checkout@v2
